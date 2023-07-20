@@ -1,11 +1,10 @@
 const NavBar = () =>{
-gi
 
   return(
-    <div className='nav'>
-      <ul>
+    <div className='nav' aria-label="Main Navigation" role="navigation">
+      {/* <ul>
         <a href='/' className='home'>Home</a>
-      </ul>
+      </ul> */}
       <ul>
         <a href="/NavPages/Womens">Women's</a>
       </ul>

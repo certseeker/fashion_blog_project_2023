@@ -1,6 +1,6 @@
 function Sartres(){
   return(
-    <h1>Sartre's</h1>
+    <p className="sartres" >Sartre's</p>
   )
 };
 

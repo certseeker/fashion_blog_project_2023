@@ -1,14 +1,60 @@
 * {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
+  font-family: 'Encode Sans Expanded', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+#header-block{
+  position: static;
+  height: 225px;
+  max-width: 100%;
+  }
+.sub-header-font{
+  font-size: 30px;
+  margin-bottom: 21px;
+}
+#sub-header{
+  position:relative;
+  margin-top: -70px;
+
+}
+.sartres{
+  /* removes the bold off of header tag */
+  position:static;
+  font-size: 80px;
+  padding-top: 20px;
+  padding-bottom: 0;
+  border-top: 50px;
+  border-bottom:0;
+  top: 100px;
+  color: tomato;
+}
+
+#navbar{
+position:inherit;
+align-items: self-start;
+padding-top: 20px;
+margin-left: -40px;
 }
 
 .nav {
+  resize: none;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: nowrap;
   line-height: 10px;
-  z-index: 2;
+  padding-top: 0px;
+  width: 100%;
+  
+  /* padding-top: 5px; */
+  /* z-index: 2; */
+}
+
+#image-1{
+  width: 1000px;
+  height: 300px;
+  background-color: rgb(174, 239, 239);
+
 }
 
 /* I am selecting the element that controls the a ref attribute */
@@ -19,14 +65,12 @@
   text-decoration-color: lightgrey;
   text-underline-offset: 5px;
   padding: 3px;
+  font-size: 22px;
 }
 
-nav ul {
-  padding:0;
-  margin: 0;
-  list-style-type: none;
-  z-index: 1;
-}
+/* nav ul {
+font-size: 20;
+} */
 
 .nav a:hover {
   color: tomato;
@@ -35,3 +79,18 @@ nav ul {
   opacity: .8;
   
 }
+
+#overall-page {
+  min-height: 100vh;
+  max-width: 1000px;
+  margin:auto;
+  margin-left: 75px;
+  border-left: 100;
+}
+
+#date h2 {
+padding-top: 80px;
+font-weight: lighter;
+color: rgb(157, 155, 155);
+}
+

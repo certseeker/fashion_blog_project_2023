@@ -1,6 +1,6 @@
 function SubHeader(){
   return(
-    'Better-Dressed People'
+    <div className="sub-header-font"> Better-Dressed People</div>
   )
 };
 

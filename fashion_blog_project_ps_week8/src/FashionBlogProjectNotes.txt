@@ -33,3 +33,11 @@ So it may actully be my html or another element of my pages other than how I act
 The next thing I want to start working after that, is inserting my photos. I can either do inline text with curly brackets and 
 insert the image, or I can create a seperate component. I can put the images in an array or just directly insert the images. While this
 is definately more work up front, if i plan on reusuing this site, it would potentially be more effecient 
+
+
+fonts on Google:
+Alegreya
+Assistant
+Noto Sand Thai
+
+Encode Sans Condensed (This is the family I went with)

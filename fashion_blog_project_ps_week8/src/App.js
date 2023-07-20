@@ -4,38 +4,40 @@ import Sartres from './Components/Sartres';
 import SubHeader from './Components/SubHeader';
 import NavBar from './Components/NavBar';
 import "./style.css";
+import ImageOne from './Components/ImageOne';
+import Date from './Components/Date';
 // Pages
-import Womens from './NavPages/Womens';
-import Mens from './NavPages/Mens';
-import OnTheStreet from './NavPages/OnTheStreet';
-import TheCatwalk from './NavPages/TheCatwalk';
-import AdWatch from './NavPages/AdWatch';
-import About from './NavPages/About';
-import Tips from './NavPages/Tips'
+// import Womens from './NavPages/Womens';
+// import Mens from './NavPages/Mens';
+// import OnTheStreet from './NavPages/OnTheStreet';
+// import TheCatwalk from './NavPages/TheCatwalk';
+// import AdWatch from './NavPages/AdWatch';
+// import About from './NavPages/About';
+// import Tips from './NavPages/Tips'
 
 
 function App() {
-  let  component
-  switch (window.location.pathname){ 
-    case "/":
-      component = <App />
-      break;
-    case "/womens":
-      component = <Womens />
-      break;
-    case "/onthestreet":
-      component = <OnTheStreet />
-      break;
-    case "thecatwalk":
-      component = <TheCatwalk />
-      break;
-    case "adwatch":
-      component = <AdWatch />
-      break;
-    case "about":
-      component = <About />
-      break;
-  }
+  // let  component
+  // switch (window.location.pathname){ 
+  //   case "/":
+  //     component = <App />
+  //     break;
+  //   case "/womens":
+  //     component = <Womens />
+  //     break;
+  //   case "/onthestreet":
+  //     component = <OnTheStreet />
+  //     break;
+  //   case "thecatwalk":
+  //     component = <TheCatwalk />
+  //     break;
+  //   case "adwatch":
+  //     component = <AdWatch />
+  //     break;
+  //   case "about":
+  //     component = <About />
+  //     break;
+  // }
 
   return (
     <div id="overall-page">
@@ -48,18 +50,19 @@ function App() {
           </div>
           <div id="navbar">
             <NavBar />
-          </div> 
+        </div> 
         {/* end of header-block */}
         </div>
         <div id="outter-box-article">
           <div id="date">
-            {/* date */}
+            <Date />
           </div>
           <div id="article-header">
             {/* On the Street in Brooklyn */}
           </div>
-          <div id="image-1" src="blog-image-1.jpg" >
+          <div id="image-1">
             {/* big image 1 */}
+            <ImageOne />
           </div>
           <div id="text-box">
             {/* //put text here */}
