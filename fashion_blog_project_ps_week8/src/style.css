@@ -3,6 +3,27 @@
   font-family: 'Encode Sans Expanded', sans-serif;
   font-family: 'Ubuntu', sans-serif;
 }
+
+#overall-page {
+  min-height: 100vh;
+  max-width: 1000px;
+  margin:auto;
+  margin-left: 75px;
+  border-left: 100;
+}
+.sartres{
+  /* removes the bold off of header tag */
+  position:static;
+  font-size: 85px;
+  padding-top: 20px;
+  padding-bottom: 0;
+  border-top: 50px;
+  border-bottom:0;
+  top: 100px;
+  color: tomato;
+  min-width: 600px
+}
+
 #header-block{
   position: static;
   height: 225px;
@@ -17,23 +38,13 @@
   margin-top: -70px;
 
 }
-.sartres{
-  /* removes the bold off of header tag */
-  position:static;
-  font-size: 80px;
-  padding-top: 20px;
-  padding-bottom: 0;
-  border-top: 50px;
-  border-bottom:0;
-  top: 100px;
-  color: tomato;
-}
 
 #navbar{
 position:inherit;
 align-items: self-start;
 padding-top: 20px;
 margin-left: -40px;
+max-width: 910px;
 }
 
 .nav {
@@ -44,17 +55,11 @@ margin-left: -40px;
   flex-wrap: nowrap;
   line-height: 10px;
   padding-top: 0px;
-  width: 100%;
+  max-width: 910px;
+  min-width: 910px;
   
   /* padding-top: 5px; */
   /* z-index: 2; */
-}
-
-#image-1{
-  width: 1000px;
-  height: 300px;
-  background-color: rgb(174, 239, 239);
-
 }
 
 /* I am selecting the element that controls the a ref attribute */
@@ -68,29 +73,122 @@ margin-left: -40px;
   font-size: 22px;
 }
 
+.nav a:hover {
+  color: tomato;
+  text-decoration-color: rgb(243, 151, 135);
+  opacity: .8;
+}
+
+
 /* nav ul {
 font-size: 20;
 } */
 
-.nav a:hover {
-  color: tomato;
-  text-decoration-color: rgb(243, 151, 135);
-  
-  opacity: .8;
-  
+#outter-box-article{
+  min-height: min-content;
 }
 
-#overall-page {
-  min-height: 100vh;
-  max-width: 1000px;
-  margin:auto;
-  margin-left: 75px;
-  border-left: 100;
+#image-1{
+  border-image-width: 100%;
+  /* width: 1000px;
+  height: 300px; */
 }
 
 #date h2 {
-padding-top: 80px;
-font-weight: lighter;
-color: rgb(157, 155, 155);
+  padding-top: 80px;
+  font-weight: lighter ;
+  color: lightslategray;
+  }
+ 
+.article-titles{
+  font-size: 60px;
+  min-width: 800px;
+  margin-bottom: 22px;
 }
 
+#text-box{
+  max-width: 910px;
+  min-width: 910px;
+  height: 400px;
+  border-bottom-style: solid;
+  border-bottom-width:1px;
+  border-bottom-color: lightgrey;
+
+}
+
+.text-boxes{
+  font-size: 22px;
+  color:lightslategray;
+  line-height: 1.8;
+  width: 100%;
+}
+
+
+.text-boxes:first-letter {
+  float:left;
+  font-size: 50px;
+  initial-letter: 3;
+  padding-right: 15px;
+}
+
+.continues {
+  float:right;
+  right: 0px;
+  width: 125px;
+  color: tomato;
+  font-weight: bold;
+  cursor: "pointer";
+}
+
+#bottom-nav{
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+#bottom-nav a:hover {
+  color: tomato;
+  text-decoration-color: rgb(243, 151, 135);
+  opacity: .8;
+}
+
+/* Tired to make an on hover here, but it did not work */
+.continues :hover {
+  color: rgb(123, 121, 121);
+  text-decoration-color: rgb(49, 47, 47);
+  opacity: .8;
+}
+
+.bnav{
+    resize: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    line-height: 10px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    max-width: 931px;
+    min-width: 925px;
+    margin-left: -20px;
+}
+
+.bnav a {
+    /* this removes the automatic underlines */
+    text-decoration: underline 2px;
+    color: lightslategray;
+    text-decoration-color: lightgrey;
+    text-underline-offset: 5px;
+    padding: 3px;
+    font-size: 20px;
+    margin-left: -20px;
+}
+
+footer {
+  color:lightslategray;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* Min and max width and height, as I have done on multiple lines in this code, or setting a "cap" of the sizing of the div or element allows the item to stay still while scrolling, scaling/resizing page */
+
+/* Drop Cap (line 127): make sure you put no spaces between the colon, or it will not read it. There was also a element:first-child:first-letter option that I tried but did not work bc of the space between the colon */

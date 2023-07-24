@@ -1,6 +1,6 @@
 function Sartres(){
   return(
-    <p className="sartres" >Sartre's</p>
+    <p className="sartres" >Sartre's List</p>
   )
 };
 

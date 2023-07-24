@@ -1,13 +1,12 @@
-function ArticleTitles(){
-  const titles [
-    {article: "one",
-    title: "On The Street in Brooklyn"
+function ArticleTitles(props){
 
-    article: "two"
-    title: "Vintage in Vouge"
+  return(
+    <div className="article-titles">
+      {props.title.title}
+    </div>
+  )
+};
 
-    }
-  ];
+export default ArticleTitles;
 
-  return()
-}
+      {/* the blue part is my custom attribute (I can name it anything, as long as I repeat that same custom attribute behind the component tag. this white titile is from line 45 in app.js (the property of the array titles) */}

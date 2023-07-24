@@ -41,3 +41,20 @@ Assistant
 Noto Sand Thai
 
 Encode Sans Condensed (This is the family I went with)
+
+
+How map works
+app js 
+            title is each title object
+          {titles.map(title => {
+            return (
+              <ArticleTitles title={title}/>
+            )
+          })}
+
+          article title
+
+          on screen
+          title is each title object
+On The Street in Brooklyn
+Vintage in Vouge
